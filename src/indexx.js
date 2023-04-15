@@ -115,7 +115,7 @@ function display(img,author,bookName,rev,description,coast,rating , id){
         const star = document.createElement(`img`);
         const starSpan = document.createElement(`span`);
         star.classList.add(`star`);
-        star.src = "../photos/icons/Star.png";
+        star.src = "photos/icons/Star.png";
         starSpan.appendChild(star)
         stars.appendChild(starSpan);
         if (rating >= 1) {
@@ -184,8 +184,13 @@ for(let i = 0;i<category.length;i++){
     category[i].addEventListener(`click` , function (){
         startIndex = 0;
         booksList.innerHTML=``;
+        category[i].classList.add(`active_category`);
+        for(let x =0;x<category.length;x++){
+            if(i!==x && category[x].classList.contains(`active_category`)){
+                category[x].classList.remove(`active_category`);
+            }
+        }
         bookCardResponse(i,startIndex);
-
     })
 }
 loadMoreBtn.addEventListener(`click` , function (){

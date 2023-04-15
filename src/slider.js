@@ -1,4 +1,4 @@
-const photosSlider = ['../photos/images/banner.png','../photos/images/banner 2.png','../photos/images/banner 3.png'];
+const photosSlider = ['photos/images/banner.png','photos/images/banner 2.png','photos/images/banner 3.png'];
 const sliderPhoto = document.getElementById('slider_photo');
 const sliderDots = document.querySelectorAll('.slider_dot');
 let currentDot = 0;

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bookshop</title>
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="container_min">
+            <nav class="header_navigator">
+                <a class="navigator_logo" href="#">Bookshop</a>
+                <div class="navigator_links">
+                    <a class="navigator_links__link active_link" href="#">books</a>
+                    <a class="navigator_links__link" href="#">audiobooks</a>
+                    <a class="navigator_links__link" href="#">Stationery & gifts</a>
+                    <a class="navigator_links__link" href="#">blog</a>
+                </div>
+                <div class="navigator_menu">
+                    <img src="photos/icons/user.svg" alt="User" class="icon">
+                    <img src="photos/icons/search.svg" alt="Search" class="icon">
+                    <div class="bag_content">
+                        <img src="photos/icons/shop bag.svg" alt="Shop bag" class="icon">
+                        <p class="bag_counter">0<p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="slider">
+        <div class="container">
+            <div class="slider_main">
+                <div class="container_min">
+                    <img src="photos/images/banner.png" id="slider_photo" alt="slider">
+                    <div class="slider_dots">
+                        <button class="slider_dot active_dot" type="submit"></button>
+                        <button class="slider_dot" type="submit"></button>
+                        <button class="slider_dot" type="submit"></button>
+                    </div>
+                </div>
+                <a href="#" class="slider_card slider_card_first">
+                    <p class="slider_card_first__text">Change
+                        old book
+                        on new</p>
+                    <img src="photos/icons/arrow.svg" class="slider_card_arrow" alt="arrow">
+                </a>
+                <a href="#" class="slider_card slider_card_second">
+                    <p class="slider_card_second__text">top
+                        100
+                        books
+                        2022</p>
+                    <img src="photos/icons/arrow.svg" class="slider_card_arrow" alt="arrow">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="books_list">
+        <div class="container">
+            <div class="books_list__main">
+                <ul class="books_list__category">
+                    <li class="category active_category" id="Architecture">Architecture</li>
+                    <li class="category" id="Art">Art & Fashion</li>
+                    <li class="category" id="Biography & Autobiography">Biography</li>
+                    <li class="category" id="Business">Business</li>
+                    <li class="category" id="Crafts & Hobbies">Crafts & Hobbies</li>
+                    <li class="category" id="Drama">Drama</li>
+                    <li class="category" id="Fiction">Fiction</li>
+                    <li class="category" id="Cooking">Food & Drink</li>
+                    <li class="category" id="Health & Wellbeing">Health & Fitness</li>
+                    <li class="category" id="History">History & Politics</li>
+                    <li class="category" id="Humor">Humor</li>
+                    <li class="category" id="Poetry">Poetry</li>
+                    <li class="category" id="Psychology">Psychology</li>
+                    <li class="category" id="Science">Science</li>
+                    <li class="category" id="Technology">Technology</li>
+                    <li class="category" id="Travel">Travel & Maps</li>
+                </ul>
+                <div class="books_cards_block">
+                    <div class="books_list__cards" id="books_list">
+
+                    </div>
+                    <button type="submit" class="btn load_more_btn" id="load_more">Load more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="dist/main.js"></script>
+</body>
+</html>
